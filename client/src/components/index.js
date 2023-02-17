@@ -8,6 +8,7 @@ import CustomInput from './CustomInput';
 import CustomButton from './CustomButton';
 import ActionButton from './ActionButton';
 import OnboardModal from './OnboardModal';
+import PushChat from './PushChat';
 
 export {
   Card,
@@ -20,4 +21,5 @@ export {
   CustomButton,
   ActionButton,
   OnboardModal,
+  PushChat,
 };

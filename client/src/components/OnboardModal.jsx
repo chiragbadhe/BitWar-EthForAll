@@ -72,11 +72,11 @@ const OnboardModal = () => {
         return (
           <>
             <p className={styles.modalText}>
-              Oops, you don't have AVAX tokens in your account
+              Oops, you don't have BIT tokens in your account
             </p>
             <CustomButton
               title="Grab some test tokens"
-              handleClick={() => window.open('https://faucet.avax.network/', '_blank')}
+              handleClick={() => window.open('https://faucet.testnet.mantle.xyz/', '_blank')}
             />
           </>
         );

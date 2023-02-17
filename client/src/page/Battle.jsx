@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
 import styles from '../styles';
-import { ActionButton, Alert, Card, GameInfo, PlayerInfo } from '../components';
+import { ActionButton, Alert, Card, GameInfo, PlayerInfo, PushChat } from '../components';
 import { useGlobalContext } from '../context';
 import { attack, attackSound, defense, defenseSound, player01 as player01Icon, player02 as player02Icon } from '../assets';
 import { playAudio } from '../utils/animation.js';
@@ -113,6 +113,8 @@ const Battle = () => {
       <PlayerInfo player={player1} playerIcon={player01Icon} />
 
       <GameInfo />
+
+      <PushChat player1={player1} player2={player2} />
     </div>
   );
 };
