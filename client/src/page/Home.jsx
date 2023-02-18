@@ -5,7 +5,8 @@ import { CustomButton, CustomInput, PageHOC } from '../components';
 import { useGlobalContext } from '../context';
 
 const Home = () => {
-  const { contract, walletAddress, gameData, setShowAlert, setErrorMessage } = useGlobalContext();
+  const { contract, walletAddress, gameData, setShowAlert, setErrorMessage } =
+    useGlobalContext();
   const [playerName, setPlayerName] = useState('');
   const navigate = useNavigate();
 
@@ -13,8 +14,12 @@ const Home = () => {
     try {
       const playerExists = await contract.isPlayer(walletAddress);
 
+      console.log('Register Button Clicked');
+
       if (!playerExists) {
-        await contract.registerPlayer(playerName, playerName, { gasLimit: 500000 });
+        await contract.registerPlayer(playerName, playerName, {
+          gasLimit: 500000,
+        });
 
         setShowAlert({
           status: true,
@@ -69,7 +74,7 @@ const Home = () => {
 export default PageHOC(
   Home,
   <>
-    Welcome to Avax Gods <br /> a Web3 NFT Card Game
+    Welcome to BitWars<br /> a Web3 Card Game
   </>,
   <>
     Connect your wallet to start playing <br /> the ultimate Web3 Battle Card

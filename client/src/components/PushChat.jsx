@@ -13,7 +13,7 @@ const PushChat = ({ player1, player2 }) => {
       supportAddress={player2[0]}
       greetingMsg="Welcome Opponent"
       modalTitle={`Chat With ${player1[1]}`}
-      apiKey="tAWEnggQ9Z.UaDBNjrvlJZx3giBTIQDcT8bKQo1O1518uF1Tea7rPwfzXv2ouV5rX9ViwgJUrXm"
+      apiKey="QTTrzDhTFA.M39A2bR1H0mJOkaOiHKGwnR2HJ48BwEknyr74aO89dQNXyJL3FIoFmPQ7QcgIqtc"
       env="staging"
       // theme={theme}
     />
